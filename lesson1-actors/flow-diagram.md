@@ -11,6 +11,7 @@ sequenceDiagram
 title  System Requirements Diagram
 accTitle: System Requirements Sequence Diagram
 accDescr: A sequence diagram that shows what interactions we are expecting the system to have
-participant system
+
+participant user
 
 ```

@@ -8,6 +8,8 @@ Who does things in our requirements?
 
 ```mermaid
 sequenceDiagram
+title  System Requirements Diagram
+accTitle: System Requirements Sequence Diagram
 
 actor user as User
 participant sys as Our System
