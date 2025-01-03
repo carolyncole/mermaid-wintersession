@@ -87,7 +87,7 @@ Here is a cheat sheet of useful items for a mermaid flow diagram.  Full document
 ### Overall Theming
   * Overall themes can be applied like a color theme: forest, dark, neutral
   ```mermaid
-  %%{init: { 'theme': 'dark',
+  %%{init: { 'theme': 'forest',
              'sequence': {'useMaxWidth':false, 
                           'mirrorActors':false,   
                           'diagramMarginX': 10
@@ -95,7 +95,7 @@ Here is a cheat sheet of useful items for a mermaid flow diagram.  Full document
             } 
   }%%
   sequenceDiagram
-    title Dark Theme Example Diagram
+    title Forest Theme Example Diagram
     actor you as You
     participant store as Pet store
     alt you love cats?
