@@ -8,12 +8,13 @@ Who does things in our requirements?
 
 ```mermaid
 sequenceDiagram
-title  System Requirements Diagram
-accTitle: System Requirements Sequence Diagram
-
 actor user as User
 participant sys as Our System
-participant ext as External System
-actor curator as Curator
 
+sys -->> user: Advertise thingamajig
+alt User wants <br> a thingamajig
+  user ->> sys: Click Link
+else
+  sys -->> user: Advertise whatsits   
+end
 ```
