@@ -18,8 +18,11 @@ participant external as External System
 actor curator as Curator
 
 user->>system: Create a thingamajig
+Note right of user: this user always makes really nice thingamajigs
 system ->> external: Request a new ID
+system ->> system: wait
+Note over system: it takes 5 minutes
 external ->> system: Provide the new ID
 system ->> user: Display the ID
-
+Note over curator: they will do something later
 ```
