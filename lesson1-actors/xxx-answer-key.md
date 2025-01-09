@@ -8,13 +8,9 @@ Who does things in our requirements?
 
 ```mermaid
 sequenceDiagram
+
 actor user as User
 participant sys as Our System
-
-sys -->> user: Advertise thingamajig
-alt User wants <br> a thingamajig
-  user ->> sys: Click Link
-else
-  sys -->> user: Advertise whatsits   
-end
+participant ext as External System
+actor curator as Curator
 ```
