@@ -12,6 +12,14 @@ title  System Requirements Diagram
 accTitle: System Requirements Sequence Diagram
 accDescr: A sequence diagram that shows what interactions we are expecting the system to have
 
-participant user
+actor user as User
+participant system as Thingamajig Central
+participant external as External System
+actor curator as Curator
+
+user->>system: Create a thingamajig
+system ->> external: Request a new ID
+external ->> system: Provide the new ID
+system ->> user: Display the ID
 
 ```
