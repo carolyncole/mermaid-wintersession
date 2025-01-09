@@ -7,22 +7,34 @@ Who does things in our requirements?
   * The Curator A human
 
 ```mermaid
+
+%%{init: { 'theme': 'neutral' }}%%
+
 sequenceDiagram
 title  System Requirements Diagram
 accTitle: System Requirements Sequence Diagram
 accDescr: A sequence diagram that shows what interactions we are expecting the system to have
+
 
 actor user as User
 participant system as Thingamajig Central
 participant external as External System
 actor curator as Curator
 
-user->>system: Create a thingamajig
-Note right of user: this user always makes really nice thingamajigs
-system ->> external: Request a new ID
-system ->> system: wait
-Note over system: it takes 5 minutes
-external ->> system: Provide the new ID
-system ->> user: Display the ID
+rect lightgreen
+ user->>system: Create a thingamajig
+ Note right of user: this user always makes really nice thingamajigs
+ system ->> external: Request a new ID
+ system ->> system: wait
+ Note over system: it takes 5 minutes
+ external ->> system: Provide the new ID
+ system ->> user: Display the ID
+end
+rect pink
+  user ->> system: Update metadata
+  opt if external system is interested
+    system ->> external: Send updates
+  end
+end
 Note over curator: they will do something later
 ```
