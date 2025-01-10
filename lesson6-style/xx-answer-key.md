@@ -1,23 +1,9 @@
-The documentation for background highlighting is located at [mermaid-js/background-highlighting](https://mermaid.js.org/syntax/sequenceDiagram.html#background-highlighting)
-
 The documentation for Themes is located at [mermaid-js/themes](https://mermaid.js.org/config/theming.html#sequence-diagram-variables)
 
 Style the diagram for visibility of the two flows
 
 1. Add an overall theme “forest” or “neutral”
-   ```
-   %%{init: { 'theme': '...'} }%%
-
-   ```
 1. Add theme variables to change the “actorBorder” and “actorBkg” to a colors of your choosing
-   ```
-   %%{init: { 'theme': '...',
-            'themeVariables': {
-              'actorBkg': '...'
-            }
-         } 
-   }%%
-   ```
 
 
 ```mermaid

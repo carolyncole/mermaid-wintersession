@@ -1,7 +1,11 @@
 The documentation for sequence diagram notes is located at [mermaid-js/notes](https://mermaid.js.org/syntax/sequenceDiagram.html#notes)
 
-Noting our wait time is typically 5 seconds
-Noting our curator will be doing things later
+1. Noting our wait time is typically 5 seconds
+   ```
+   note over sys,ext: ...
+   ```
+1. Noting our curator will "be approving things later"
+
 
 
 ```mermaid
@@ -14,8 +18,6 @@ actor user as User
 participant sys as Our System
 participant ext as External System
 actor curator as Curator
-
-note over user: ...
 
 user -) sys: create thingamajig
 sys -->> ext: mint id

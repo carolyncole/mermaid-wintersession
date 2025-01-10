@@ -3,12 +3,7 @@ The documentation for sequence diagram notes is located at [mermaid-js/notes](ht
 A User updates the Thingamajig: Update the External System if the change is something they are interested
 
 1. Add the User Updating the Metadata in Our System
-1. Add a opt to show Our System Updating the External System only if the External System “Is Interested”
-   ```
-   opt ...
-     sys --> ext: ...
-   end
-   ```
+1. Add a opt to show Our System Updating the External 
 
 
 ```mermaid

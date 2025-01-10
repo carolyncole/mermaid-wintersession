@@ -1,10 +1,10 @@
 The documentation for sequence diagrams is located at [mermaid-js](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
 
 Who does things in our requirements?
-  * The User - A human
-  * Our System - A computer
-  * The External System - A computer
-  * The Curator A human
+1. add an actor for the User
+1. add a participant for Our System
+1. add a participant for the External System
+1. add an actor for the curator
 
 ```mermaid
 sequenceDiagram
