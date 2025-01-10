@@ -1,11 +1,12 @@
 The documentation for sequence diagram messages is located at [mermaid-js/messages](https://mermaid.js.org/syntax/sequenceDiagram.html#messages)
 
-How actors interact? Take the first requirement `A User created a new object: I need to mint a ID with ID System X`
+How can we differentiate our actions?
 
-1. User Creates a thingamajig in our system
-1. Our System asks System X to mint an ID
-1. System X responds with the ID
-1. We show the user the ID
+1. change `create thingamajig` to a curved arrow
+1. change `mint id` to a dashed line
+1. change the wait to no arrow and a dashed line
+1. change `send id` to a dashed line
+1. change `show id` to a curved arrow
 
 
 ```mermaid

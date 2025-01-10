@@ -19,6 +19,6 @@ participant sys as Our System
 participant ext as External System
 actor curator as Curator
 
-user -> sys: do work
+user ->> sys: do work
 
 ```
