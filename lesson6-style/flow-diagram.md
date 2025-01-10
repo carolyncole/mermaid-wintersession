@@ -4,13 +4,6 @@ The documentation for Themes is located at [mermaid-js/themes](https://mermaid.j
 
 Style the diagram for visibility of the two flows
 
-1. Add background highlighting to the “Create Workflow”
-   ```
-   rect ...
-     ...
-   end
-   ```
-1. Add background highlighting to the “Update Workflow”
 1. Add an overall theme “forest” or “neutral”
    ```
    %%{init: { 'theme': '...'} }%%

@@ -11,29 +11,9 @@ Style the diagram for visibility of the two flows
    end
    ```
 1. Add background highlighting to the “Update Workflow”
-1. Add an overall theme “forest” or “neutral”
-   ```
-   %%{init: { 'theme': '...'} }%%
-
-   ```
-1. Add theme variables to change the “actorBorder” and “actorBkg” to a colors of your choosing
-   ```
-   %%{init: { 'theme': '...',
-            'themeVariables': {
-              'actorBkg': '...'
-            }
-         } 
-   }%%
-   ```
 
 
 ```mermaid
-%%{init: { 'theme': 'forest',
-            'themeVariables': {
-              'actorBorder': 'blue',
-              'actorBkg': 'pink'
-            }
-        } }%%
 
 sequenceDiagram
 title  System Requirements Diagram
