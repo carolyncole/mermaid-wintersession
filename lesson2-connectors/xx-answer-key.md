@@ -21,7 +21,7 @@ actor curator as Curator
 
 user ->> sys: create thingamajig
 sys ->> ext: mint id
-sys -> sys: wait
+sys ->> sys: wait
 ext ->> sys: send id
 sys ->> user: show id
 
